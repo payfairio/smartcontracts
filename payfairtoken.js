@@ -83,7 +83,7 @@ contract PayFairToken is SafeMath, ERC20, Ownable {
  string public name = "PayFair Token";
  string public symbol = "PFR";
  uint public constant decimals = 8;
- uint public constant FROZEN_TOKENS = 12e6;
+ uint public constant FROZEN_TOKENS = 11e6;
  uint public constant FREEZE_PERIOD = 1 years;
  uint public constant MULTIPLIER = 10 ** decimals;
  uint public crowdSaleOverTimestamp;
