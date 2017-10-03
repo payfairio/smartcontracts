@@ -109,7 +109,7 @@ contract PayFairToken is SafeMath, ERC20, Ownable {
  string public name = "PayFair Token";
  string public symbol = "PFR";
  uint public constant decimals = 8;
- uint public constant FROZEN_TOKENS = 12e6;
+ uint public constant FROZEN_TOKENS = 11e6;
  uint public constant FREEZE_PERIOD = 1 years;
  uint public constant MULTIPLIER = 10 ** decimals;
  uint public crowdSaleOverTimestamp;
@@ -269,10 +269,10 @@ contract Killable is Ownable {
 contract PayFairTokenCrowdsale is Haltable, Killable, SafeMath {
 
   /// Total count of tokens distributed via ICO
-  uint public constant TOTAL_ICO_TOKENS = 66e6;
+  uint public constant TOTAL_ICO_TOKENS = 56e6;
 
   /// Total count of tokens distributed manually on the pre-ICO stage
-  uint public constant PRE_ICO_MAX_TOKENS = 22e6;
+  uint public constant PRE_ICO_MAX_TOKENS = 33e6;
 
   /// Miminal tokens funding goal in Wei, if this goal isn't reached during ICO, refund will begin
   uint public constant MIN_ICO_GOAL = 1 ether;
